@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE location-upload [
+    <!ELEMENT location-upload (locations)>
+    <!ATTLIST location-upload operation (insert|update) "update">
+    <!ELEMENT locations (location+)>
+    <!ELEMENT location (location_id?, location_name)>
+    <!ELEMENT location_id (#PCDATA)>
+    <!ELEMENT location_name (#PCDATA)>
+]>
+
+<location-upload operation="update">
+    <locations>
+        <location>
+            <location_id>12</location_id>
+            <location_name>South Bank</location_name>
+        </location>
+    </locations>
+</location-upload>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activity-upload [
+    <!ELEMENT activity-upload (activities)>
+    <!ATTLIST activity-upload operation (insert|update) "insert">
+    <!ELEMENT activities (activity+)>
+    <!ELEMENT activity (activity_name, activity_description?, activity_duration)>
+    <!ELEMENT activity_name (#PCDATA)>
+    <!ELEMENT activity_description (#PCDATA)>
+    <!ELEMENT activity_duration (#PCDATA)>
+]>
+<activity-upload operation="insert">
+    <activities>
+        <activity>
+            <activity_name>BODY COMBAT</activity_name>
+            <activity_description>A martial art inspired workout that works your legs, tones your arms and back and your core.</activity_description>
+            <activity_duration>55</activity_duration>
+        </activity>
+        <activity>
+            <activity_name>BODY STEP</activity_name>
+            <activity_description>An energizing step class using a height-adjustable step and simple movements on, over and around it, for a leaner body.</activity_description>
+            <activity_duration>45</activity_duration>
+        </activity>
+    </activities>
+</activity-upload>

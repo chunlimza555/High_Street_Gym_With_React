@@ -1,0 +1,22 @@
+{
+  "name": "high-street-gym-web-service",
+  "version": "1.0.0",
+  "description": "This is a full stack project for High street gym using Express for the backend, and react js for the front end ",
+  "main": "index.js",
+  "scripts": {
+    "backend": "npm run dev -w backend",
+    "frontend": "npm run dev -w frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mongkonkrit Aumpaisiriwong",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "express-fileupload": "^1.5.1",
+    "luxon": "^3.5.0"
+  }
+}
